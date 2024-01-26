@@ -61,37 +61,6 @@ params:
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
-  # Search
-  # flexsearch is enabled by default
-  search:
-    enable: true
-    type: flexsearch
-
-    flexsearch:
-      # index page by: content | summary | heading | title
-      index: content
-
   editURL:
     enable: true
     base: "https://github.com/imfing/hextra/edit/main/exampleSite/content"
-
-  blog:
-    list:
-      displayTags: true
-
-  comments:
-    enable: false
-    type: giscus
-
-    # https://giscus.app/
-    giscus:
-      repo: imfing/hextra
-      repoId: R_kgDOJ9fJag
-      category: General
-      categoryId: DIC_kwDOJ9fJas4CY7gW
-      # mapping: pathname
-      # strict: 0
-      # reactionsEnabled: 1
-      # emitMetadata: 0
-      # inputPosition: top
-      # lang: en
