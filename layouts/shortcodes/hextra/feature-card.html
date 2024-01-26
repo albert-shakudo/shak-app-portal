@@ -1,0 +1,17 @@
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $linkURL := .Get "linkURL" -}}
+{{- $icon := .Get "icon" -}}
+
+<a href="{{ $linkURL }}" target="_blank" rel="noreferrer"
+  class="block relative overflow-hidden rounded-lg border border-gray-200 hover:border-gray-300 dark:border-neutral-800 dark:hover:border-neutral-700">
+  <div class="w-full p-6">
+    {{ if $icon }}
+    <img src="{{ $icon }}" class="pr-2 mb-4 :filter dark:brightness-0 dark:invert" alt="Icon">
+    {{ end }}
+    <h3 class="text-lg font-semibold leading-6 mb-1 flex items-center">
+      <span>{{ $title }}</span>
+    </h3>
+    <p class="text-gray-500 dark:text-gray-400 text-sm leading-2">{{ $subtitle | markdownify }}</p>
+  </div>
+</a>
