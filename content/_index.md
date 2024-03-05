@@ -5,13 +5,13 @@ layout: hextra-home
 
 <div class="mt-4 mb-4">
 {{< hextra/hero-headline >}}
-  Shakudo AI App Portal
+  {{< param companyname >}} AI App Portal
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="mb-12">
 {{< hextra/hero-subtitle >}}
-  Explore our suite of ready-to-use AI apps built on the Shakudo, designed for seamless data interaction.<br class="sm:block hidden" />Select an app to launch it in a new tab effortlessly.
+  {{< param description >}}
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -19,48 +19,34 @@ layout: hextra-home
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="Chat with Data"
-    subtitle="Interact with your data using a variety of LLM models and vector databases"
+    title="Chat to SQL"
+    subtitle=" Input your questions in plain English, and the app translates them into SQL queries for data retrieval."
     class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px]"
     image="images/hextra-doc.webp"
     imageClass="top-[40%] left-[24px] w-[180%] sm:w-[110%] dark:opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
-    icon="images/chat-with-data.svg"
+    icon="images/nlp-sql.svg"
+    linkURL="https://dev.hyperplane.dev/XX_col-desc-sql_frontend"
   >}}
   {{< hextra/feature-card
-    title="Markdown is All You Need"
-    subtitle="Compose with just Markdown. Enrich with Shortcode components."
-    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
-    image="images/hextra-markdown.webp"
-    imageClass="top-[40%] left-[36px] w-[180%] sm:w-[110%] dark:opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="Full Text Search"
-    subtitle="Built-in full text search with FlexSearch, no extra setup required."
+    title="Chat with Document"
+    subtitle="Ask the AI questions about your uploaded PDF's content to quickly find the information you need."
     class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px]"
-    image="images/hextra-search.webp"
-    imageClass="top-[40%] left-[36px] w-[110%] sm:w-[110%] dark:opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+    image="images/hextra-doc.webp"
+    imageClass="top-[40%] left-[24px] w-[180%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    icon="images/pdf-doc.svg"
+    linkURL="https://dev.hyperplane.dev/eqb_n8n_frontend"
   >}}
   {{< hextra/feature-card
-    title="Lightweight as a Feather"
-    subtitle="No dependency or Node.js is needed to use Hextra. Powered by Hugo, one of *the fastest* static site generators, building your site in just seconds with a single binary."
-  >}}
-  {{< hextra/feature-card
-    title="Responsive with Dark Mode Included"
-    subtitle="Looks great on different screen sizes. Built-in dark mode support, with auto-switching based on user's system preference."
-  >}}
-  {{< hextra/feature-card
-    title="Build and Host for Free"
-    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
-  >}}
-  {{< hextra/feature-card
-    title="Multi-Language Made Easy"
-    subtitle="Create multi-language pages by just adding locales suffix to the Markdown file. Adding i18n support to your site is intuitive."
-  >}}
-  {{< hextra/feature-card
-    title="And Much More..."
-    subtitle="Syntax highlighting / Table of contents / SEO / RSS / LaTeX / Mermaid / Customizable / and more..."
-  >}}
+    title="Chat with Database"
+    subtitle="Interact with vector databases through a simple chat interface to streamline your data search."
+    class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px]"
+    image="images/hextra-doc.webp"
+    imageClass="top-[40%] left-[24px] w-[180%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    icon="images/chat-db.svg"
+    linkURL="https://dev.hyperplane.dev/eqb_n8n_frontend"
+  >}}  
+
 {{< /hextra/feature-grid >}}

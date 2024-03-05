@@ -1,6 +1,6 @@
 # Configuration
 baseURL: "https://example.com/"
-title: "Shakudo AI App Portal"
+title: "Cavs AI App Portal"
 
 enableRobotsTXT: true
 # enableGitInfo: true
@@ -30,14 +30,14 @@ markup:
 enableInlineShortcodes: true
 
 params:
-  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
-
+  companyname: Cavs
+  description: Welcome to the Cavs AI App Portal. Elevate your data science workflow with specialized AI tools, including our Secure LLM Chatbot, NLP to SQL for streamlined data queries, PDF Q&A for rapid insights, and direct database interaction for comprehensive analysis.
   navbar:
     displayTitle: true
     displayLogo: true
     logo:
       path: images/logo.svg
-      dark: images/logo-dark.svg
+      dark: images/logo.svg
       # width: 40
       # height: 20
       # link: /
@@ -55,7 +55,7 @@ params:
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: true
+    displayPoweredBy: false
     width: normal
 
   displayUpdatedDate: true
